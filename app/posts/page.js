@@ -23,7 +23,7 @@ export default async function PostsPage(){
                         width: "100%", 
                         background:"white",
                         color:"brown",
-                        padding: "20px",
+                        padding: "10px",
                         borderRadius: "10px",
                         color: "black",
                         marginTop: "20px",
