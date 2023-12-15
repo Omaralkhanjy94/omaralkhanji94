@@ -1,6 +1,6 @@
 import styles from './page.module.css';
-import Avatar from './components/avatar';
-
+// import Avatar from './components/avatar';
+import Image from 'next/image';
 export default function Home() {
   
   return (
@@ -20,8 +20,9 @@ export default function Home() {
             <div className="col-md-6">
                 {/* <!-- يمكنك إضافة صورتك الشخصية هنا --> */}
                 {/* <Image src={avatar} alt="me" width="64" height="64"/> */}
-                <Avatar/>
-                
+                {/* <Avatar/> */}
+
+                <Image src={"/images/111_1.png"} alt="me" width="300" height="300"/>
 
             </div>
         </div>
