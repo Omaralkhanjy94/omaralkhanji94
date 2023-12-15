@@ -10,7 +10,7 @@ export default async function ProjectDetailsPage({params}){
         <div>            
             {/* <img src="../images/logo.png" height="50px"/> */}
 
-            <Avatar/>
+            <p>Wait...</p>
         </div>
     );
     return(
