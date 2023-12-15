@@ -1,5 +1,7 @@
+"use client";
 // import Todo from "../components/todo";
 // import print from "../core";
+
 import Link from "next/link";
 import { promises as fs } from 'fs';
 
@@ -41,7 +43,9 @@ export default async function ProjectsPage(){
                 alignItems: "center",
                 flexDirection: "column",
             }}>
-                {projectsJSX}</div>
+                {projectsJSX}
+                
+                </div>
             
         </div>
     );
