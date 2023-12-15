@@ -1,4 +1,4 @@
-// 'use client';
+'use client';
 // import { promises as fs } from 'fs';
 import Image from 'next/image';
 

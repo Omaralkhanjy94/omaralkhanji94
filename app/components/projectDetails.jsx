@@ -8,7 +8,7 @@ export default async function ProjectDetails({projectId}){
     const data = JSON.parse(file);
     print(`first : ${projectId}`);
     if(projectId<1){
-        projectId;
+        projectId=0;
     }
     print(`second : ${projectId}`);
     const project = data[projectId];
