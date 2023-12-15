@@ -1,6 +1,5 @@
-import styles from './page.module.css';
-import Avatar from './components/avatar';
-
+import styles from '../page.module.css';
+import Avatar from '../components/avatar';
 export default function HomePage() {
   // const avatar = Avatar();
   //hello back
