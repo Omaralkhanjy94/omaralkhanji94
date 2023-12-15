@@ -2,7 +2,6 @@ import styles from './page.module.css';
 import Avatar from './components/avatar';
 
 export default function Home() {
-  // const avatar = Avatar();
   
   return (
     <section id="about" className="container mt-5">
