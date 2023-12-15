@@ -6,7 +6,7 @@ export default function Home() {
   
   return (
     <section id="about" className="container mt-5">
-        <div className="row" style={{padding:"20px 50px 100px 100px"}}>
+        <div className="row" style={{padding:"20px 50px 100px 20px"}}>
             <div className="col-md-6">
                 <h2>Hello, to my portfolio</h2>
                 <p>
