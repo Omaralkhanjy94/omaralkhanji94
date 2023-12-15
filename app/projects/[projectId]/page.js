@@ -12,7 +12,7 @@ export default async function ProjectDetailsPage({params}){
     );
     return(
     <div style={{
-        padding: "0px 0px 50px 50px",
+        padding: "0px 0px 50px 30px",
         width:"70%"
     }}>
         <h1>Project Details</h1>

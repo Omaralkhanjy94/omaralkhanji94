@@ -1,18 +1,20 @@
-"use server";
-import print from "@/app/core";
+"use client";
+// import print from "@/app/core";
 import { promises as fs } from 'fs';
 import DownloadLink from "./downloadapplication";
 
 export default async function ProjectDetails({projectId}){    
     const file = await fs.readFile(process.cwd() + `/app/projects/data.json`, 'utf8');
     const data = JSON.parse(file);
-    print(`first : ${projectId}`);
+
+    // print(`first : ${projectId}`);
     if(projectId<1){
         projectId=0;
     }
-    print(`second : ${projectId}`);
+    // print(`second : ${projectId}`);
     const project = data[projectId];
-     print(`Post title : ${project.title}`);
+
+    //  print(`Post title : ${project.title}`);
      var dl= "";
      dl=`/app/projects/${projectId}`;
      var message = "";var messagecolor="red";
@@ -43,7 +45,6 @@ export default async function ProjectDetails({projectId}){
             <hr/>
             <div style={{padding:"25px 10px 5px 10px"} }>
                 <br/>
-            
              <i style={{color:`${messagecolor}`, fontSize:"12pt"}}>{message}</i> 
              <br/><br/>
              <DownloadLink dl={dl}/>
