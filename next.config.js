@@ -5,7 +5,7 @@ module.exports = {
       // إضافة تكوينات إضافية إذا كنت تحتاج إليها
       if (!isServer) {
         config.resolve.fallback = {
-          fs: true,
+          fs: false,
         };
       }
   
