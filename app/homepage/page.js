@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Avatar from "../components/avatar";
 export default function HomePage(){
     return (
         <main>
@@ -7,6 +7,7 @@ export default function HomePage(){
             <Link href="/aboutpage">
                 <button>Take me to About Page</button>
             </Link>
+            <Avatar/>
         </main>
     );
 }

@@ -1,0 +1,38 @@
+[
+    {
+        "id": "0",
+        "title":"Blue Diamond - Chat App",
+        "video_path": "../videos/proj8.mp4",
+        "img_path": "../images/proj8.JPG",
+        "download_link": "../files/proj8.apk"
+    }
+    ,
+    {
+        "id": "1",
+        "title":"progame",
+        "video_path": "../videos/progame.mp4",
+        "img_path": "../images/progame.JPG",
+        "download_link": ""
+    },
+    {
+        "id": "2",
+        "title":"alfabatika",
+        "video_path": "../videos/proj5.mp4",
+        "img_path":"../images/alfabatika.JPG",
+        "download_link": ""
+    },
+    {
+        "id":"3",
+        "title" : "Part Of E-Market App",
+        "video_path":"../videos/proj7.mp4",
+        "img_path":"../images/proj7.JPG",
+        "download_link":""
+    },
+    {
+        "id":"4",
+        "title":"Part Of E-Shop App",
+        "video_path":"../videos/proj6.mp4",
+        "img_path":"../images/proj6.JPG",
+        "download_link":""
+    }
+]

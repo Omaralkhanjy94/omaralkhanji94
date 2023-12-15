@@ -133,3 +133,13 @@ a {
   padding: 2.0px;
   background-color: #fffdfdda;
 }
+#avatar{
+  width: 100%;
+  max-width:100%;height:auto;
+  }
+
+/*From bootstrap*/
+.col-md-6{flex:0 0 auto;width:50%}
+.row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:flex;flex-wrap:wrap;margin-top:calc(var(--bs-gutter-y) * -1);margin-right:calc(var(--bs-gutter-x) * -.5);margin-left:calc(var(--bs-gutter-x) * -.5)}
+.container,.container-fluid,.container-lg,.container-md,.container-sm,.container-xl,.container-xxl{width:100%;padding-right:var(--bs-gutter-x,.75rem);padding-left:var(--bs-gutter-x,.75rem);margin-right:auto;margin-left:auto}
+mt-5{margin-top:3rem!important}
