@@ -1,3 +1,4 @@
+"use server";
 import print from "@/app/core";
 import { promises as fs } from 'fs';
 import DownloadLink from "./downloadapplication";
