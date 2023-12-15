@@ -4,7 +4,7 @@ import { promises as fs } from 'fs';
 import DownloadLink from "./downloadapplication";
 
 export default async function ProjectDetails({projectId}){    
-    const file = await fs?.readFile(process.cwd() + `/app/projects/data.json`, 'utf8');
+    const file = await fs.readFile(process.cwd() + `/app/projects/data.json`, 'utf8');
     const data = JSON.parse(file);
     print(`first : ${projectId}`);
     if(projectId<1){

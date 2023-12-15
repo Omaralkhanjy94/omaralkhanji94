@@ -1,4 +1,4 @@
-import Avatar from "@/app/components/avatar";
+import Image from "next/image";
 export default function LoadingProjectDetails(){
     return (
         <div 
@@ -12,10 +12,13 @@ export default function LoadingProjectDetails(){
            marginTop: "20px",
            textAlign:"center"
        }}>
-
-        <Avatar/>
-            <h1>Loading...</h1>
-
+        <h1 style={{color:"brown"}}>Loading...</h1>
+        <Image 
+        src={"/images/logo.png"}
+        height={100}
+        width={100}
+        />
+       
         </div>
     );
 }

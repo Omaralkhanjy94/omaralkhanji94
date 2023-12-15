@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google'
-import './globals.css'
-import Link from 'next/link'
+import './globals.css';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <nav id="main-nav-bar">
-          <Link className='navlink' href="/app"> 
+          <Link className='navlink' href="//"> 
              Home Page
           </Link>
           &nbsp;&nbsp;
