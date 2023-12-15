@@ -4,6 +4,7 @@ export default function ContactMePage(){
     return (
         <div style={{padding:"20px"}}>
             <h1>
+                {/* The Page Title */}
                 Contact Page
             </h1>
             <br/>
