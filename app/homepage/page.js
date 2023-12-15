@@ -3,6 +3,7 @@ import Avatar from '../components/avatar';
 export default function HomePage() {
   // const avatar = Avatar();
   //hello back
+  //ok?
   return (
     <section id="about" className="container mt-5">
         <div className="row" style={{padding:"20px 50px 100px 20px"}}>
