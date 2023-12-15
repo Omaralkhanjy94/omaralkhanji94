@@ -22,7 +22,12 @@ export default function Home() {
                 {/* <Image src={avatar} alt="me" width="64" height="64"/> */}
                 {/* <Avatar/> */}
 
-                <Image src={"/images/111_1.png"} alt="me" width="300" height="300"/>
+                <Image 
+                  src={"/images/111_1.png"} 
+                  alt="me" 
+                  width="300" 
+                  height="300"
+                />
 
             </div>
         </div>
