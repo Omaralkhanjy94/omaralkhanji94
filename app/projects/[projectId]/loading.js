@@ -14,7 +14,7 @@ export default function LoadingProjectDetails(){
        }}>
         <h1 style={{color:"brown"}}>Loading...</h1>
         <Image 
-        src={"/images/logo.png"}
+        src={"/images/111_1.png"}
         height={100}
         width={100}
         />
