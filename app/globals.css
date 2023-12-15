@@ -83,6 +83,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background-color: #a7edf010;
 }
 
 body {
@@ -131,7 +132,7 @@ a {
 .navlink{
   /* margin: 2px; */
   padding: 2.0px;
-  background-color: #fffdfdda;
+  background-color: #b5f1d5fa;
 }
 #avatar{
   width: 100%;
