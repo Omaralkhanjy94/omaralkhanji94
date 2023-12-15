@@ -23,7 +23,7 @@ export default async function ProjectsPage(){
                     }}
                 >
                     <h3>{project.title}</h3>
-                    <img src={project.img_path}  height="50%" width="70%" style={{paddingLeft:"100px"}}/>
+                    <img className="projectcomponent" src={project.img_path} height="80%" width="90%" style={{paddingLeft:"30px"}}/>
                 </div>
             </Link>
         );

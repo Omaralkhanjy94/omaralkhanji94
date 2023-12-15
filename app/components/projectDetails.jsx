@@ -1,10 +1,9 @@
-`use client`;
 import print from "@/app/core";
 import { promises as fs } from 'fs';
 import DownloadLink from "./downloadapplication";
 
 export default async function ProjectDetails({projectId}){    
-    const file = await fs.readFile(process.cwd() + `/app/projects/data.json`, 'utf8');
+    const file = await fs?.readFile(process.cwd() + `/app/projects/data.json`, 'utf8');
     const data = JSON.parse(file);
     print(`first : ${projectId}`);
     if(projectId<1){
@@ -50,7 +49,7 @@ export default async function ProjectDetails({projectId}){
              <br/><br/>
              <h5>video</h5>
            
-            <video src={project.video_path} width="100%" controls></video>
+            <video className="projectvideo" src={project.video_path} width="100%" controls></video>
               
             </div>
             {/* <Link href={dl} >Download Application</Link> */}

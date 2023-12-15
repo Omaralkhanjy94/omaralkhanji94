@@ -15,8 +15,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <nav id="main-nav-bar">
-          <Link className='navlink' href="./"> 
-             Log out
+          <Link className='navlink' href="/app"> 
+             Home Page
           </Link>
           &nbsp;&nbsp;
           <Link className='navlink' href={"/aboutpage"}>

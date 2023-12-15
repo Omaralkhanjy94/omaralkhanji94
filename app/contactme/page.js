@@ -3,6 +3,10 @@ import Link from "next/link";
 export default function ContactMePage(){
     return (
         <div style={{padding:"20px"}}>
+            <h1>
+                Contact Page
+            </h1>
+            <br/>
             <p style={{paddingLeft:"10px", paddingRight:"30px"}}>Call me on:</p>
             <p style={{paddingLeft:"20px", paddingRight:"30px"}}>00962795372616</p>
             <br/>
