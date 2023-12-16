@@ -2,7 +2,7 @@ import Link from "next/link";
 import { promises as fs } from 'fs';
 
 export default async function ProjectsPage(){
-    const file = await fs.readFile(process.cwd() + '/public/json/data.json', 'utf8');
+    const file = await fs.readFile(`${process.cwd()}/api/data.json`, 'utf8');
     const projects = JSON.parse(file); 
     const projectsJSX = projects.map((project) => {
         return (
