@@ -1,5 +1,6 @@
+'use client';
 import ProjectDetails from "@/app/components/projectDetails";
-import print from "@/app/core";
+// import print from "@/app/core";
 import { Suspense } from "react";
 import {promises as fs} from "fs";
 export default async function ProjectDetailsPage({params}){

@@ -2,10 +2,6 @@
 import print from "@/app/core";
 import DownloadLink from "./downloadapplication";
 
-
-// import fs from 'fs';
-// var fs = require('fs');
-
 export default function ProjectDetails({projectId, project}){   
     
     if(projectId<1){
