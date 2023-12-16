@@ -31,9 +31,9 @@ export default async function ProjectDetailsPage({params}){
         width:"70%"
     }}>
         <h1>Project Details</h1>
-        {/* <Suspense key={projectId} fallback={loadingJSX}> */}
+        <Suspense key={projectId} fallback={loadingJSX}>
             {projectJSX}
-        {/* </Suspense> */}
+        </Suspense>
     </div>
     );
 }
