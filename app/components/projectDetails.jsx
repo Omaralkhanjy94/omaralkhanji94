@@ -1,18 +1,13 @@
 "use client";
 import print from "@/app/core";
 import DownloadLink from "./downloadapplication";
+
+
 // import fs from 'fs';
-var fs = require('fs');
+// var fs = require('fs');
 
-export default async function ProjectDetails({projectId}){   
-    // const file = fs.readFile(`/json/data.json`, 'utf8',()=>{
-    //     print("The file is opened");
-    // });
-    // const project = JSON.parse(`${process.cwd()}/public/json/data.json`); 
-
-    const response = await fetch(`/projects/${projectId}`);
-    const project = await response.json(); 
-
+export default function ProjectDetails({projectId, project}){   
+    
     if(projectId<1){
         projectId=0;
     }
@@ -30,7 +25,7 @@ export default async function ProjectDetails({projectId}){
      }
     return(
     // 
-    <div>
+    <div key={projectId}>
         <div 
              style={{
                 width: "100%", 
