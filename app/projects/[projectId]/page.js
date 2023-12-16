@@ -9,33 +9,33 @@ export default async function ProjectDetailsPage({params}){
     const projects = JSON.parse(file);     
     const projectId = params.projectId;
 
-    // const projectJSX = projects.map((project)=>{
-    //     if(project.id === projectId)
-    //     {return <div key={projectId}>
-    //         <ProjectDetails project={project} projectId={projectId}/>
-    //     </div>}
-    //     else{
-    //         return <div key={projectId}> 
-    //     </div> 
-    //     }
+    const projectJSX = projects.map((project)=>{
+        if(project.id === projectId)
+        {return <div key={projectId}>
+            <ProjectDetails project={project} projectId={projectId}/>
+        </div>}
+        else{
+            return <div key={projectId}> 
+        </div> 
+        }
         
 
-    // });
-    // const loadingJSX=(
-    //     <div>            
-    //         <p>Wait...</p>
-    //     </div>
-    // );
+    });
+    const loadingJSX=(
+        <div>            
+            <p>Wait...</p>
+        </div>
+    );
     return(
     <div key={projectId} style={{
         padding: "0px 0px 50px 30px",
         width:"70%"
     }}>
         <h1>Project Details</h1>
-        {/* <Suspense key={projectId} fallback={loadingJSX}>
+        <Suspense key={projectId} fallback={loadingJSX}>
             {projectJSX}
-        </Suspense> */}
-        <h1>{projects[1].title}</h1>
+        </Suspense>
+        {/* <h1>{projects[1].title}</h1> */}
     </div>
     );
 }
