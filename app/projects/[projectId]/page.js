@@ -1,4 +1,3 @@
-'use client';
 import ProjectDetails from "@/app/components/projectDetails";
 // import print from "@/app/core";
 import { Suspense } from "react";
