@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 // import Todo from "../components/todo";
 // import print from "../core";
 
@@ -6,7 +6,7 @@ import Link from "next/link";
 import { promises as fs } from 'fs';
 
 export default async function ProjectsPage(){
-    const file = await fs.readFile(process.cwd() + '/app/projects/data.json', 'utf8');
+    const file = await fs.readFile(process.cwd() + '/public/json/data.json', 'utf8');
     const projects = JSON.parse(file); 
     const projectsJSX = projects.map((project) => {
         return (
@@ -25,7 +25,8 @@ export default async function ProjectsPage(){
                     }}
                 >
                     <h3>{project.title}</h3>
-                    <img className="projectcomponent" src={project.img_path} height="80%" width="90%" style={{paddingLeft:"30px"}}/>
+                    <img className="projectcomponent" src={project.img_path} 
+                    height="80%" width="90%" style={{paddingLeft:"30px"}}/>
                 </div>
             </Link>
         );

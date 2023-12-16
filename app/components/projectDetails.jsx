@@ -1,22 +1,23 @@
-// "use client";
-// import print from "@/app/core";
-import { promises as fs } from 'fs';
+"use client";
+import print from "@/app/core";
 import DownloadLink from "./downloadapplication";
+// import fs from 'fs';
+var fs = require('fs');
 
-export default async function ProjectDetails({projectId}){    
-    const file = await fs.readFile(process.cwd() + `/app/projects/data.json`, 'utf8');
-    const data = JSON.parse(file);
+export default async function ProjectDetails({projectId}){   
+    // const file = fs.readFile(`/json/data.json`, 'utf8',()=>{
+    //     print("The file is opened");
+    // });
+    // const project = JSON.parse(`${process.cwd()}/public/json/data.json`); 
 
-    // print(`first : ${projectId}`);
+    const response = await fetch(`/projects/${projectId}`);
+    const project = await response.json(); 
+
     if(projectId<1){
         projectId=0;
     }
-    // print(`second : ${projectId}`);
-    const project = data[projectId];
-
-    //  print(`Post title : ${project.title}`);
      var dl= "";
-     dl=`/app/projects/${projectId}`;
+     dl=`/projects/${projectId}`;
      var message = "";var messagecolor="red";
      if(project.download_link!=""){
         dl=project.download_link;
