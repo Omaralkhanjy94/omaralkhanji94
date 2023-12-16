@@ -19,19 +19,20 @@ export default async function ProjectDetailsPage({params,projects}){
         </div> 
         }
     },[]);
-    const loadingJSX=(
-        <div>            
-            <p>Wait...</p>
-        </div>
-    );
+    // const loadingJSX=(
+    //     <div>            
+    //         <p>Wait...</p>
+    //     </div>
+    // );
     return(
     <div style={{
         padding: "0px 0px 50px 30px",
         width:"70%"
     }}>
         <h1>Project Details</h1>
+        {projectJSX}
         {/* <Suspense key={projectId} fallback={loadingJSX}>
-            {projectJSX}
+            
         </Suspense> */}
         {/* <h1>{projects[1].title}</h1> */}
     </div>
