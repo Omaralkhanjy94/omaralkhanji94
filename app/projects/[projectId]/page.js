@@ -12,7 +12,8 @@ export default async function ProjectDetailsPage({params,projects}){
     const projectJSX = projects.map((project)=>{
         if(project.id === projectId)
         {return <div key={projectId}>
-            <ProjectDetails project={project} projectId={projectId}/>
+            <p>Project Details</p>
+            {/* <ProjectDetails project={project} projectId={projectId}/> */}
         </div>}
         else{
             return <div key={projectId}> 
