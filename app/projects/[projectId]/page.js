@@ -1,4 +1,4 @@
-'use server';
+'use client';
 
 import ProjectDetails from "@/app/components/projectDetails";
 // import print from "@/app/core";
@@ -6,6 +6,7 @@ import { Suspense } from "react";
 import {promises as fs} from "fs";
 export default async function ProjectDetailsPage({params}){
     //process.cwd() + 
+    
     const file = await fs.readFile(`${process.cwd()}/public/json/data.json`, 'utf8');
     const projects = JSON.parse(file);     
     const projectId = params.projectId;
