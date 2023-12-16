@@ -5,10 +5,10 @@ import { Suspense } from "react";
 import {promises as fs} from "fs";
 export default async function ProjectDetailsPage({params}){
     //process.cwd() + 
-    const file = await fs.readFile(`${process.cwd()}\\app\\api\\data.json`, 'utf8');
+    const file = await fs.readFile(`${process.cwd()}/app/api/data.json`, 'utf8');
     const projects = JSON.parse(file);     
     const projectId = params.projectId;
-    print(`${process.cwd()}\\app\\api\\data.json`);
+    print(`${process.cwd()}/app/api/data.json`);
     const projectJSX = projects.map((project)=>{
         if(project.id === projectId)
         {return <div key={projectId}>
