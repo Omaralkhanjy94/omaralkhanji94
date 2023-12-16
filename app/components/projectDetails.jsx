@@ -10,7 +10,7 @@ export default function ProjectDetails({projectId, project}){
      var dl= "";
      dl=`/projects/${projectId}`;
      var message = "";var messagecolor="red";
-     if(project.download_link!=""){
+     if(project.download_link!==""){
         dl=project.download_link;
         message = "The download link is valid.";
         messagecolor = "green";
