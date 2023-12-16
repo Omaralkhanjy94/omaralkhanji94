@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import {promises as fs} from "fs";
 export default async function ProjectDetailsPage({params}){
     //process.cwd() + 
-    const file = await fs.readFile(`/public/json/data.json`, 'utf8');
+    const file = await fs.readFile(process.cwd() +`/public/json/data.json`, 'utf8');
     const projects = JSON.parse(file);     
     const projectId = params.projectId;
 
