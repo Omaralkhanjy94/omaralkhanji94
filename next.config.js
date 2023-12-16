@@ -7,6 +7,10 @@ module.exports = {
         config.resolve.fallback = {
           fs: false,
         };
+      }else{
+        config.resolve.fallback = {
+          fs: true,
+        };
       }
   
       return config;
