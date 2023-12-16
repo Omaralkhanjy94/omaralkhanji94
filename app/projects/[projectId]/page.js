@@ -3,6 +3,7 @@ import ProjectDetails from "@/app/components/projectDetails";
 import print from "@/app/core";
 import { Suspense } from "react";
 import {promises as fs} from "fs";
+import "@/app/api/data.json";
 export default async function ProjectDetailsPage({params}){
     //process.cwd() + 
     const file = await fs.readFile(`${process.cwd()}/app/api/data.json`, 'utf8');
