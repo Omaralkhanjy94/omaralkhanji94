@@ -6,11 +6,11 @@ export default async function ProjectsPage(){
     const projects = JSON.parse(file); 
     const projectsJSX = projects.map((project) => {
         return (
-            <Link href={`/projects/${project.id}`}
+            <Link key={project.id} href={`/projects/${project.id}`}
             style={{
                 width:"70%",
             }}>
-                <div 
+                <div key={project.id}
                      style={{
                         width: "100%", 
                         background:"white",
@@ -20,8 +20,8 @@ export default async function ProjectsPage(){
                         marginTop: "20px",
                     }}
                 >
-                    <h3>{project.title}</h3>
-                    <img className="projectcomponent" src={project.img_path} 
+                    <h3 key={project.id}>{project.title}</h3>
+                    <img key={project.id} className="projectcomponent" src={project.img_path} 
                     height="80%" width="90%" style={{paddingLeft:"30px"}}/>
                 </div>
             </Link>

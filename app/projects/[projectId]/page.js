@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import {promises as fs} from "fs";
 export default async function ProjectDetailsPage({params}){
     //process.cwd() + 
-    const file = await fs.readFile('/public/json/data.json', 'utf8');
+    const file = await fs.readFile(`${process.cwd()}/public/json/data.json`, 'utf8');
     const projects = JSON.parse(file);     
     const projectId = params.projectId;
 
@@ -26,12 +26,12 @@ export default async function ProjectDetailsPage({params}){
         </div>
     );
     return(
-    <div style={{
+    <div key={projectId} style={{
         padding: "0px 0px 50px 30px",
         width:"70%"
     }}>
         <h1>Project Details</h1>
-        <Suspense fallback={loadingJSX}>
+        <Suspense key={projectId} fallback={loadingJSX}>
             {projectJSX}
         </Suspense>
     </div>
