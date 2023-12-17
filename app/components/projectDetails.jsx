@@ -8,17 +8,22 @@ export default function ProjectDetails({projectId, project}){
         projectId=0;
     }
      var dl= "";
-     dl=`/projects/${projectId}`;
+     dl=``;
      var message = "";var messagecolor="red";
+     print(project.download_link);
      if(project.download_link!==""){
         dl=project.download_link;
+        print(dl);
         message = "The download link is valid.";
         messagecolor = "green";
+        
      }
      else{
+        dl=`/projects/${projectId}`;
         message = "The download link is invalid.";
         messagecolor= "red";
      }
+     print(`message : ${message}`);
     return(
     // 
     <div key={projectId}>
@@ -27,10 +32,11 @@ export default function ProjectDetails({projectId, project}){
                 width: "100%", 
                 background:"white",
                 color:"brown",
-                padding: "10px",
+                padding: "20px",
                 borderRadius: "10px",
                 color: "black",
                 marginTop: "20px",
+                marginLeft:"40px"
             }}
         >
             <h3>{project.title}</h3>
@@ -39,7 +45,7 @@ export default function ProjectDetails({projectId, project}){
                 <br/>
              <i style={{color:`${messagecolor}`, fontSize:"12pt"}}>{message}</i> 
              <br/><br/>
-             <DownloadLink dl={dl}/>
+             <DownloadLink dl={`/files/proj8.apk`}/>
              <br/><br/>
              <h5>video</h5>
            

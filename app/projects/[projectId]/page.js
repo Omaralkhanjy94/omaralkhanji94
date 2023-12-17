@@ -30,7 +30,7 @@ export default async function ProjectDetailsPage({params}){
     return(
     <div key={projectId} style={{
         padding: "0px 0px 50px 30px",
-        width:"70%"
+        width:"90%"
     }}>
         <h1>Project Details</h1>
         <Suspense key={projectId} fallback={loadingJSX}>
