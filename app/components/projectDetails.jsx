@@ -43,7 +43,7 @@ export default function ProjectDetails({projectId, project}){
             <hr/>
             <div style={{padding:"25px 10px 5px 10px"} }>
                 <br/>
-             <i style={{color:`${messagecolor}`, fontSize:"12pt"}}>{message}</i> 
+             {/* <i style={{color:`${messagecolor}`, fontSize:"12pt"}}>{message}</i>  */}
              <br/><br/>
              {/* <DownloadLink dl={`/public/files/proj8.apk`}/> */}
              <br/><br/>
