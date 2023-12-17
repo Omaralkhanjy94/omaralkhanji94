@@ -36,7 +36,7 @@ export default function ProjectDetails({projectId, project}){
                 borderRadius: "10px",
                 color: "black",
                 marginTop: "20px",
-                marginLeft:"10px"
+                marginLeft:"5px"
             }}
         >
             <h3>{project.title}</h3>
