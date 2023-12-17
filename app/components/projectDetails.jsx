@@ -47,7 +47,9 @@ export default function ProjectDetails({projectId, project}){
              {/* <i style={{color:`${messagecolor}`, fontSize:"12pt"}}>{message}</i>  */}
              {/* <br/><br/> */}
              
-             <DownloadLink dl={`/files/proj8.apk`}/>
+             {/* <DownloadLink dl={`/files/proj8.apk`}/> */}
+             <a href={`/files/proj8.apk`} style={{fontSize:"9pt", backgroundColor:"blue", 
+    borderRadius:"10px", color:"white", padding : "5px"}}>Download Application</a>
              <br/><br/>
              <h5>video</h5>
            
