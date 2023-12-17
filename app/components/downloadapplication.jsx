@@ -7,7 +7,7 @@ export default function DownloadLink (dl){
     print(dl);
     
     // if(message != "")return (`${message}`);
-    return (<Link href={{dl}} style={{fontSize:"12pt", backgroundColor:"blue", 
+    return (<Link href={{dl}} style={{fontSize:"9pt", backgroundColor:"blue", 
     borderRadius:"10px", color:"white", padding : "5px"}}>Download Application</Link>);
 
 }
