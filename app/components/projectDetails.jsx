@@ -43,14 +43,14 @@ export default function ProjectDetails({projectId, project}){
             <hr/>
             <div style={{padding:"25px 10px 10px 10px"} }>
                 
-                <br/>
+                {/* <br/> */}
              {/* <i style={{color:`${messagecolor}`, fontSize:"12pt"}}>{message}</i>  */}
              {/* <br/><br/> */}
              
              {/* <DownloadLink dl={`/files/proj8.apk`}/> */}
-             <a href={`/proj8.apk`} style={{fontSize:"9pt", backgroundColor:"blue", 
-    borderRadius:"10px", color:"white", padding : "5px"}}>Download Application</a>
-             <br/><br/>
+             {/* <a href={`/proj8.apk`} style={{fontSize:"9pt", backgroundColor:"blue", 
+    borderRadius:"10px", color:"white", padding : "5px"}}>Download Application</a> */}
+             {/* <br/><br/> */}
              <h5>video</h5>
            
             <video className="projectvideo" src={project.video_path} width="100%" controls></video>
