@@ -48,8 +48,6 @@ export default function ProjectDetails({projectId, project}){
              {/* <br/><br/> */}
              
              {/* <DownloadLink dl={`/files/proj8.apk`}/> */}
-             {/* <a href={`/proj8.apk`} style={{fontSize:"9pt", backgroundColor:"blue", 
-    borderRadius:"10px", color:"white", padding : "5px"}}>Download Application</a> */}
              {/* <br/><br/> */}
              <h5>video</h5>
            
